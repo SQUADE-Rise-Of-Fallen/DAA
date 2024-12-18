@@ -2,10 +2,16 @@
 #include <iostream>
 using namespace std;
 int op;
-int fibonnaci(int n)
+void fibonnaci(int n)
 {
     int a = 0, b = 1, c;
     op += 2;
+    op++;
+    if (n == 1)
+    {
+        cout << a;
+        return;
+    }
     cout << a << " " << b << " ";
     op++;
     for (int i = 2; i < n; i++)
@@ -16,7 +22,7 @@ int fibonnaci(int n)
         a = b;
         b = c;
     }
-    return 0;
+    return;
 }
 int main()
 {
